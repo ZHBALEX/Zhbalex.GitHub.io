@@ -1,2 +1,3 @@
-# tyleransom.github.io
-Repository for Tyler Ransom's academic research website.
+# zhbalex.github.io
+Repository for Haobo Zhao's academic research website.
+Based on Tyler Ransom's academic research website.
