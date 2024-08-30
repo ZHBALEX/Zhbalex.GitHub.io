@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  29 AUG 2024 18:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  30 AUG 2024 00:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -287,7 +287,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-Overfull \hbox (4.31651pt too wide) in paragraph at lines 99--100
+Overfull \hbox (4.31651pt too wide) in paragraph at lines 131--132
 []\OT1/lmr/m/n/10.95 Incorporated the stom-ach mus-cles via Fluid-Structure-Electrophysiological-Interaction (FSEI)
  []
 
@@ -295,28 +295,18 @@ Overfull \hbox (4.31651pt too wide) in paragraph at lines 99--100
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.126 \end{itemize}
-                    [2]
+l.142 \begin{itemize}[leftmargin=*,itemsep=1pt]
+                                                [2]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.173     \item \textbf
-                       {H. Kondapalli, S. Sharma, S. Kuhar, A. Nath, V. Shuk... [3]
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.196 \section*{Professional Service}
-                                      [4]
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.253     \item N
-                 umerical Methods, Fall 2021 and Fall 2023 [5]
+l.186     \item \textbf
+                       {S. Kuhar, J. H. Lee, J. H. Seo, P. J. Pasricha, and ... [3]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.257 \end{document}
-                     [6] (./CV_Haobo_Zhao_2024.aux)
+                     [4] (./CV_Haobo_Zhao_2024.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
@@ -331,12 +321,12 @@ Here is how much of TeX's memory you used:
  31144 multiletter control sequences out of 15000+600000
  577693 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,1262b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,1262b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on CV_Haobo_Zhao_2024.pdf (6 pages, 123896 bytes).
+Output written on CV_Haobo_Zhao_2024.pdf (4 pages, 119524 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 50 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
