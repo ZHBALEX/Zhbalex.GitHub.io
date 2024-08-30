@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  30 AUG 2024 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  30 AUG 2024 12:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -291,21 +291,25 @@ Package hyperref Info: Link coloring OFF on input line 21.
 \@outlinefile=\write3
 \openout3 = `CV_Haobo_Zhao_2024.out'.
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 70.
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 30.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 68.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.183     \item C
-                 ollaborated with lecturers to enhance lecture quality and s... [2]
+l.135 \end{itemize}
+                    [2]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.210 \end{document}
+l.168 \end{document}
                      [3] (./CV_Haobo_Zhao_2024.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -315,18 +319,18 @@ Package rerunfilecheck Info: File `CV_Haobo_Zhao_2024.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9294 strings out of 474050
- 144847 string characters out of 5742263
- 1935751 words of memory out of 5000000
- 31642 multiletter control sequences out of 15000+600000
- 577693 words of font info for 44 fonts, out of 8000000 for 9000
+ 9338 strings out of 474050
+ 145578 string characters out of 5742263
+ 1936751 words of memory out of 5000000
+ 31681 multiletter control sequences out of 15000+600000
+ 578004 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,5n,79p,1262b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on CV_Haobo_Zhao_2024.pdf (3 pages, 111316 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on CV_Haobo_Zhao_2024.pdf (3 pages, 134217 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
