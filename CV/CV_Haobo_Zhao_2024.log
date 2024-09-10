@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  2 SEP 2024 14:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  9 SEP 2024 20:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -304,8 +304,8 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.178 \section*{Volunteering \& Teaching}
-                                          [2]
+l.181 \noindent
+               \textbf{Core Team Member} \hfill \textit{May 2022 - Dec. 2022... [2]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -321,13 +321,13 @@ Package rerunfilecheck Info: File `CV_Haobo_Zhao_2024.out' has not changed.
 Here is how much of TeX's memory you used:
  9338 strings out of 474050
  145578 string characters out of 5742263
- 1936751 words of memory out of 5000000
+ 1937751 words of memory out of 5000000
  31681 multiletter control sequences out of 15000+600000
  578004 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,1262b,646s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,1262b,622s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on CV_Haobo_Zhao_2024.pdf (3 pages, 137841 bytes).
+Output written on CV_Haobo_Zhao_2024.pdf (3 pages, 137829 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream

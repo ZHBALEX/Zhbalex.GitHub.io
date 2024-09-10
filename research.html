@@ -64,8 +64,80 @@
         <a href="https://zhbalex.github.io/Projects/JHU-CFD/CFD_HW4_Lid_Driven_Cavity.pdf" class="author-social" target="_blank"> PDF</a><br></h2>
   
         <p>
-          <h2></a> Abstract </a></h2>
-        <h3></a> Background </a></h3>
+          <!-- <h2></a> Abstract </a></h2> -->
+
+
+        </p>
+
+        <p>
+          In the study of pancreatic duct diseases, the pressure drop across the duct serves as a key indicator of abnormality, often correlating with patient pain scores. By establishing a relationship between the pressure drop and patient symptoms, we can predict disease progression and recommend appropriate treatments. Traditionally, pressure drop measurements require invasive procedures, which are costly and pose significant health risks. Consequently, a non-invasive approach is urgently needed to improve diagnostic accuracy and reduce patient exposure to harmful procedures.
+        
+        </p>
+
+        <p>
+
+
+          This study introduces a computational method, incorporating Computational Fluid Dynamics (CFD), to analyze pancreatic duct flow. Using high-resolution MRI data to reconstruct a 3D model of the pancreatic duct, we simulate the fluid dynamics of pancreatic juice, which is assumed to have properties similar to water. The simulation computes the pressure drop along the duct, providing insights into the disease state. We validate our CFD results by comparing them with experimental data from real patients.
+
+          <br/>
+   <br/>
+   <div style="text-align: center;">
+     <img src="https://zhbalex.github.io/Research/Process-CFX.jpg" height="" width="400" alt="Mindmap 1">
+   </div>
+
+        </p>
+
+        
+
+        <p>
+
+          Furthermore, we developed a theoretical model based on duct geometry and Navier-Stokes (NS) equations, which simplifies the pressure drop prediction through numerical integration, without relying on full CFD simulations. The theoretical model incorporates duct parameters such as cross-sectional area, length, curvature, and surface convexity, and achieves prediction errors within 0%-20% when compared to CFD results. This model offers a cost-effective and time-efficient alternative for predicting pressure drop in clinical settings.
+        </p>
+
+
+        <div style="text-align: center;">
+          <img src="https://zhbalex.github.io/Research/PD_BC.jpg" height="" width="200" alt="Mindmap 1">
+        </div>
+
+
+<!-- 
+        <p>
+          <h2></a> Introduction: </a></h2>
+
+          In pancreatic disease diagnosis, pressure drop across the duct is a critical parameter, often associated with patient-reported pain levels. Establishing a predictive model that links pressure drop to clinical outcomes would aid in identifying patients requiring treatment. Current methods involve invasive procedures, where catheters are inserted into the pancreatic duct to measure pressure. This approach, while effective, is associated with high costs, patient discomfort, and the potential for complications. Hence, the development of a non-invasive diagnostic method is of paramount importance.
+
+          The advent of advanced imaging techniques and computational methods presents an opportunity to address this challenge. The question arises: Can we predict which patients exhibit abnormal pancreatic duct behavior based solely on non-invasive imaging techniques, such as MRI? While preliminary studies suggest a degree of correlation, these methods are limited in accuracy and applicability to a small number of cases. A more accurate approach would involve utilizing CFD to simulate the flow within a reconstructed 3D model of the duct, enabling a precise prediction of pressure drop.
+          
+        </p>
+
+        <p>
+          <h2></a> Methods: </a></h2>
+          <h3></a> Computational Fluid Dynamics Approach: </a></h3>
+
+          In this study, we leverage CFD to simulate the flow of pancreatic juice, which behaves similarly to water, through the pancreatic duct. MRI data provided by collaborators at Johns Hopkins Medical Institute (JHMI) was used to generate high-resolution 3D reconstructions of the pancreatic duct. After processing the imaging data, we applied a meshing technique to discretize the duct geometry and imposed appropriate boundary conditions, such as mass flow rates at the inlet and outlet of the duct.
+
+          The CFD simulations were carried out using a commercial CFD solver, with the goal of determining the pressure drop along the duct. The boundary conditions were set based on physiological mass flow rates, and the duct wall was assumed to be rigid. Results from the simulations were validated by comparing them with experimental pressure data obtained from 19 real-patient cases.
+        
+        </p>
+
+        <p>
+          <h3></a> Theoretical Model for Pressure Drop Prediction: </a></h3>
+
+          To complement the computational approach, we developed a simplified theoretical model based on the Navier-Stokes equations for ducts with varying cross-sections. The key assumption in this model is that under constant mass flow conditions, the pressure drop depends solely on the geometric characteristics of the duct. These characteristics include duct length, cross-sectional area, curvature, and surface convexity.
+
+          To simplify the analysis, we linearized the governing equations by neglecting nonlinear terms associated with high flow velocities. This allowed us to derive an integral expression for the pressure drop, where all the necessary duct parameters could be extracted directly from the 3D MRI model. The integral was evaluated numerically using an algorithm that we developed to extract the relevant geometric parameters from the 3D model.
+          
+        </p>
+
+        <p>
+          <h2></a> Results: </a></h2>
+
+          The results of our CFD simulations demonstrated a strong correlation between the pressure drop and the geometric features of the pancreatic duct. By comparing CFD results with experimental measurements, we found that our simulations accurately captured the pressure drop behavior across a range of patient cases.
+
+          Furthermore, the theoretical model was able to predict pressure drops within a 0%-20% error range when compared to the full CFD simulations. This level of accuracy suggests that the theoretical model, despite its simplicity, is a viable alternative for quick, non-invasive pressure drop predictions, especially in clinical settings where computational resources may be limited.
+ -->
+
+        <!-- <h3></a> Background </a></h3>
           Chronic pancreatitis with debilitating 
           abdominal pain can be caused by pancreatic 
           ductal hypertension. 
@@ -91,11 +163,7 @@
           and the computational fluid dynamics simulation is 
           performed to determine the flow pattern and measure 
           the pressure drop across the duct.
-<!-- 
-          <br/>
-          <br/>
-          <img src="https://zhbalex.github.io/Research/PD_show.jpg" height="" width="300" alt="Mindmap 1">
-   -->
+
 
 
    <br/>
@@ -124,12 +192,9 @@
           and the correlation between the ductal pressure drop 
           and the patient pain score is analyzed.
 
-  
-        <!-- <br/>
-        <br/>
-        <div style="text-align: center;">
-          <img src="https://zhbalex.github.io/Research/process_total-withANSYS.jpg" height="" width="500" alt="Mindmap 1">
-        </div> -->
+  -->
+
+
 
 
       </section>
