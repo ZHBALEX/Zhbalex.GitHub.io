@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  17 NOV 2024 13:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  17 NOV 2024 14:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/haobozhao/Documents/GitHub/Zhbalex.GitHub.io/CV/CV_Haobo_Zhao_2024.tex
-(/Users/haobozhao/Documents/GitHub/Zhbalex.GitHub.io/CV/CV_Haobo_Zhao_2024.tex
+**"/Users/haobozhao/Documents/GitHub/Zhbalex.GitHub.io/CV Short/CV_short_Haobo_Zhao_2024.tex"
+(/Users/haobozhao/Documents/GitHub/Zhbalex.GitHub.io/CV Short/CV_short_Haobo_Zhao_2024.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -229,8 +229,8 @@ File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2024-04-11 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count280
 \l__pdf_internal_box=\box53
-) (./CV_Haobo_Zhao_2024.aux)
-\openout1 = `CV_Haobo_Zhao_2024.aux'.
+) (./CV_short_Haobo_Zhao_2024.aux)
+\openout1 = `CV_short_Haobo_Zhao_2024.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
@@ -286,15 +286,15 @@ LaTeX Font Info:    ... okay on input line 35.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 35.
-(./CV_Haobo_Zhao_2024.out) (./CV_Haobo_Zhao_2024.out)
+(./CV_short_Haobo_Zhao_2024.out) (./CV_short_Haobo_Zhao_2024.out)
 \@outlinefile=\write3
-\openout3 = `CV_Haobo_Zhao_2024.out'.
+\openout3 = `CV_short_Haobo_Zhao_2024.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 45.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 95.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 96.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
@@ -303,25 +303,25 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.223 \end{document}
-                     [2] (./CV_Haobo_Zhao_2024.aux)
+l.226 \end{document}
+                     [2] (./CV_short_Haobo_Zhao_2024.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
  ***********
-Package rerunfilecheck Info: File `CV_Haobo_Zhao_2024.out' has not changed.
+Package rerunfilecheck Info: File `CV_short_Haobo_Zhao_2024.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  8988 strings out of 474050
- 141663 string characters out of 5742263
- 1943751 words of memory out of 5000000
+ 141797 string characters out of 5742263
+ 1946751 words of memory out of 5000000
  31333 multiletter control sequences out of 15000+600000
  589534 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,375b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,389b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on CV_Haobo_Zhao_2024.pdf (2 pages, 197682 bytes).
+Output written on CV_short_Haobo_Zhao_2024.pdf (2 pages, 192262 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream

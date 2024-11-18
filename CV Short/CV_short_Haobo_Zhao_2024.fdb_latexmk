@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1731868944.41312 "/Users/haobozhao/Documents/GitHub/Zhbalex.GitHub.io/CV/CV_Haobo_Zhao_2024.tex" "CV_Haobo_Zhao_2024.pdf" "CV_Haobo_Zhao_2024" 1731868945.53396 0
-  "/Users/haobozhao/Documents/GitHub/Zhbalex.GitHub.io/CV/CV_Haobo_Zhao_2024.tex" 1731868943.03938 9565 a688c17d24c6ed94b9a1d7fa786430f9 ""
+["pdflatex"] 1731870068.34478 "/Users/haobozhao/Documents/GitHub/Zhbalex.GitHub.io/CV Short/CV_short_Haobo_Zhao_2024.tex" "CV_short_Haobo_Zhao_2024.pdf" "CV_short_Haobo_Zhao_2024" 1731870069.68073 0
+  "/Users/haobozhao/Documents/GitHub/Zhbalex.GitHub.io/CV Short/CV_short_Haobo_Zhao_2024.tex" 1731870068.04837 9643 828ae67389e8309718f0ff2bbd73ae2d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1202520719 2327 9d6df24f9c4f7368395224341a95523a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc" 1254269338 2359 de53213020575850c8f8debc35095765 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc" 1254269338 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
@@ -70,12 +70,12 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1716341025 5483668 9e45798515b35c9eab0413928a3e8881 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1716341186 8225178 e58f3c082f475a31400ef518165687bf ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "CV_Haobo_Zhao_2024.aux" 1731868945.37748 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "CV_Haobo_Zhao_2024.out" 1731868945.04422 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "CV_Haobo_Zhao_2024.tex" 1731868943.03938 9565 a688c17d24c6ed94b9a1d7fa786430f9 ""
+  "CV_short_Haobo_Zhao_2024.aux" 1731870069.48741 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "CV_short_Haobo_Zhao_2024.out" 1731870069.14339 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "CV_short_Haobo_Zhao_2024.tex" 1731870068.04837 9643 828ae67389e8309718f0ff2bbd73ae2d ""
   (generated)
-  "CV_Haobo_Zhao_2024.aux"
-  "CV_Haobo_Zhao_2024.log"
-  "CV_Haobo_Zhao_2024.out"
-  "CV_Haobo_Zhao_2024.pdf"
+  "CV_short_Haobo_Zhao_2024.aux"
+  "CV_short_Haobo_Zhao_2024.log"
+  "CV_short_Haobo_Zhao_2024.out"
+  "CV_short_Haobo_Zhao_2024.pdf"
   (rewritten before read)
