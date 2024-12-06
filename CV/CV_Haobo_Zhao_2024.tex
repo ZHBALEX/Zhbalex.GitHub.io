@@ -1,223 +1,410 @@
-\documentclass[10pt]{article} % 字体大小设为10pt
-\usepackage[utf8]{inputenc}
-\usepackage{geometry}
-\geometry{a4paper, margin=0.75in} % 边距缩小以节省空间
-\usepackage{enumitem} % 用于调整 itemize 列表样式
-\usepackage{hyperref}
-\usepackage{titlesec}
-\usepackage{lmodern}
-\usepackage{fancyhdr}
-\usepackage{setspace}
+\documentclass[10pt, letterpaper]{article}
 
-% 设置列表样式
-\setlist[itemize]{leftmargin=1em, itemsep=0em} % 全局设置 itemize 环境的间距和左边距
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % separation between body and page edge from the top
+    bottom=2 cm, % separation between body and page edge from the bottom
+    left=2 cm, % separation between body and page edge from the left
+    right=2 cm, % separation between body and page edge from the right
+    footskip=1.0 cm, % separation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Haobo Zhao's CV},
+    pdfauthor={Haobo Zhao},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page break right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
 
-% 标题部分设置
-\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
-\titlespacing{\section}{0pt}{0.5em}{0.25em}
-\titlespacing{\subsection}{0pt}{0.3em}{0.2em}
+% Ensure that generated pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
 
-% 设置无页码，取消缩进和紧凑段落
-\pagestyle{fancy}
-\fancyhf{}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.3em} % 设置段落之间较小的间距
-\setstretch{1} % 行距设为1.1倍
+\usepackage{charter}
 
-% 设置对齐方式
-\newcommand{\rightaligned}[2]{
-  \begin{tabbing}
-  \hspace{0.8\textwidth}\=\kill
-  \textbf{#1} \> \textit{#2}
-  \end{tabbing}
-}
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column separation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{ 
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+
+
 \begin{document}
-\small
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
 
-\pagenumbering{gobble} % Remove page numbers
-\setstretch{1.1} % Adjust line spacing
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont Haobo Zhao
 
-\begin{center}
-    {\LARGE \textbf{Haobo Zhao}} \\
-    \vspace{2mm}
-    \small
-    \texttt{hzhao67@jhu.edu} ,
-    \href{https://zhbalex.github.io}{zhbalex.github.io} ,
-    \href{https://www.linkedin.com/in/haobo-zhao-035529229}{LinkedIn: Haobo Zhao}
-\end{center}
+        \vspace{5 pt}
 
-\vspace{2mm}
+        \normalsize
 
-\section*{Education}
-\hrule
+        
+        \mbox{\href{mailto:hzhao67@jhu.edu}{hzhao67@jhu.edu}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\href{tel:+1-618-796-8009}{(618)796-8009}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\href{https://zhbalex.github.io}{zhbalex.github.io}}%
+        
+        
+        \mbox{\href{https://github.com/zhbalex}{github.com/zhbalex}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\href{https://www.linkedin.com/in/haobo-zhao-035529229}{linkedin.com/in/haobo-zhao-035529229}}%
 
-\noindent\textbf{\normalsize{Johns Hopkins University}}, Baltimore, MD \hfill \textit{Sep. 2023 - Present} \\
-\textsl{Master in Mechanical Engineering }\\
-% GPA: 4.0/4.0 \\
-Advisor: Dr. Rajat Mittal and Dr. Jung-Hee Seo
+    \end{header}
 
-\textbf{Relevant Coursework:} Comuptational Fluid Dynamics, Fluid Dynamics I \& II, Convection, Numerical Method, Turbulence, Multiphase Flow
-\vspace{2mm}
-
-\noindent\textbf{\normalsize{Southern Illinois University}}, Carbondale, IL \hfill \textit{2022-2023} \\
-\textsl{B.S. in Aviation Technologies} (Dual Degree with SAU) \hfill  GPA: 3.81/4.0 \\
-Graduated Magna cum Laude, Dean's List: Fall 2022, Fall 2023
-
-\vspace{2mm}
-
-\noindent\textbf{\normalsize{Shenyang Aerospace University}}, Shenyang, China \hfill \textit{2019-2023} \\
-\textsl{Bachelor in Aircraft Propulsion Engineering} \hfill GPA: 3.8/4.0 \\
-National Scholarship (2021, top 1\% in Department) \\
-SAU First Class Scholarship (Fall 2020, Fall 2021, Spring 2022)
-
-\vspace{2mm}
-
-\section*{Research Interests}
-\hrule
-
-I am interested in the simulation and application of bio-fluids in various aspects. I have experience in coordinating with medical teams to solve real problems in patients using CFD, as well as experience in flow simulation and analysis in bio-ducts and algorithm development.
+    \vspace{5 pt - 0.3 cm}
 
 
+    \section{Education}
 
-\section*{Conference Presentations}
-\hrule
+    \begin{twocolentry}{
+        Sep. 2023 - Present
+    }
+        \textbf{Johns Hopkins University}, Baltimore, MD\end{twocolentry}
 
-Zhao, H., Seo, J. H., Akshintala, V., Boparai, I., \& Mittal, R. (2024). Computational Modeling of Pancreatic Duct Flows for a Novel Non-invasive Diagnosis of Chronic Pancreatitis. Bulletin of the American Physical Society.
+    \vspace{0.10 cm}
+    
+            \begin{onecolentry}
+        \begin{highlights}
+            \item \textsl{Master in Mechanical Engineering} \hfill{GPA: 3.86/4.0}
+            \item Advisors: Dr. Rajat Mittal and Dr. Jung-Hee Seo
+
+            \item \textbf{Coursework:} CFD, Fluid Dynamics I \& II, Convection, Numerical Method, Turbulence, Multiphase Flow
+        
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        2022 - 2023
+    }
+        \textbf{Southern Illinois University}, Carbondale, IL\end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+
+            \item \textsl{B.S. in Aviation Technologies} (Dual Degree with SAU) \hfill{GPA: 3.81/4.0}
+
+            \item Graduated Magna cum Laude, Dean's List: Fall 2022, Fall 2023
+         
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        2019 - 2023
+    }
+        \textbf{Shenyang Aerospace University}, Shenyang, China\end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+
+            \item \textsl{Bachelor in Aircraft Propulsion Engineering}
+            \hfill{GPA: 3.8/4.0}
+
+            \item National Scholarship (2021, top 1\% in Department)
+            \item SAU First Class Scholarship (Fall 2020, Fall 2021, Spring 2022)
+            
+        \end{highlights}
+    \end{onecolentry}
 
 
+    \section{Research}
 
-\vspace{2mm}
+    \begin{twocolentry}{
+        Jan. 2024 - Present
+    }
+        \textbf{Johns Hopkins University}, Baltimore, MD\end{twocolentry}
 
-\section*{Research Experience}
-\hrule
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textbf{Master Thesis (Advisor: Dr. Rajat Mittal, Dr. Jung-Hee Seo)} – Department of Mechanical Engineering
+            \item Developed an imaging data-based CFD model of the pancreatic duct (PD) using the CFX solver, validated against clinical data. Simulated PD flow mechanisms and correlated pressure drop with ERCP-related pain scores.
+            \item Created a procedure for generating patient-specific PD models using cine-MRI data.
+            \item Formulated a theoretical flow model to predict pressure variations along the PD.
+            \item Collaborated with medical teams to validate the results for clinical applications.
+        \end{highlights}
+    \end{onecolentry}
 
-\begin{itemize}[leftmargin=*,itemsep=1pt]
+    \vspace{0.2 cm}
 
-    \item \textbf{Johns Hopkins University} \hfill \textit{Sep. 2023 - Present} \\
-    Master Thesis (Advisor: Dr. Rajat Mittal, Dr. Jung-Hee Seo) – Department of Mechanical Engineering
-    \begin{itemize}[leftmargin=*,itemsep=1pt]
-        \item Developed an imaging data-based CFD model of the pancreatic duct (PD) using the CFX solver, validated against clinical data.
-        \item Created a pipeline for generating patient-specific PD models using cine-MRI data.
-        \item Formulated a theoretical flow model to predict pressure variations along the PD.
-        \item Collaborated with medical teams to validate the results for clinical applications.
-        \item Simulated PD flow mechanisms and correlated pressure drop with ERCP-related pain scores.
+    \section{Publications and Presentations}
+
+
+    \subsection*{Conference Presentations}
+    \begin{itemize}[leftmargin=*, itemsep=0pt]
+        \item Zhao, H., Seo, J. H., Akshintala, V., Boparai, I., \& Mittal, R. (2024). Computational Modeling of Pancreatic Duct Flows for a Novel Non-invasive Diagnosis of Chronic Pancreatitis. \textit{Bulletin of the American Physical Society}.
     \end{itemize}
 
-    % \item \textbf{Shenyang Aerospace University} \hfill \textit{Sep. 2021 - Dec. 2021} \\
-    % Project: Oil Tank Movement Simulation (Advisor: Dr. Wei Sha) – Department of Aerospace Engineering
-    % \begin{itemize}[leftmargin=*,itemsep=1pt]
-    %     \item Conducted CFD simulations of oil-gas mixture behavior in a moving tank under various flight conditions.
-    %     \item Assessed the impact of flight maneuvers on fluid stability for safety evaluations.
-    % \end{itemize}
+    \subsection*{In Preparation}
+    \begin{itemize}[leftmargin=*, itemsep=0pt]
+        \item Zhao, H., Seo, J. H., Akshintala, V., Boparai, I., \& Mittal, R. (2024). \textbf{Non-invasive assessment of pancreatic duct hypertension using computational flow modeling.} (To be submitted to the \textit{Journal of Biomechanical Engineering}).
+    \end{itemize}
 
-    % \item \textbf{Southern Illinois University} \hfill \textit{Jan. 2022 - May. 2022} \\
-    % Urban UAV System (Advisor: Thomas Roy) – Department of Aviation Technologies
-    % \begin{itemize}[leftmargin=*,itemsep=1pt]
-    %     \item Designed a truck-based UAS network for extended range through mid-route cargo exchange and power replenishment.
-    %     \item Developed a modular platform for universal UAS takeoff, landing, and maintenance.
-    %     \item Implemented dynamic route planning to optimize UAS operations and logistics.
-    % \end{itemize}
 
-\end{itemize}
 
-\vspace{1mm}
 
-\section*{Engineering Projects}
-\hrule
+    \section{Experience}
+        \begin{twocolentry}{
+            Oct. 2024 - Present
+        }
+            \textbf{CFD Visualization Engineer}, CertAir LLC\end{twocolentry}
 
-\noindent \textbf{Adaptive Multi-bypass Propulsion System} \hfill \textit{Team Leader, May 2022}
-\begin{itemize}[leftmargin=*,itemsep=1pt]
-    \item Proposed an aero-engine improvement plan for a multi-electric design, focusing on power generation and energy efficiency.
-    \item Integrated an adaptive three-bypass system with the XA100 prototype, enhancing heat management and stealth.
-\end{itemize}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Conducted CFD simulations of cleanroom airflow to optimize layout and design for controlled environments.
+                \item Developed and implemented visualization techniques for airflow patterns and pressure distribution to diagnose cleanroom performance issues.
+                \item Automated processes for robotic pressure measurement, particle detection, and report generation, streamlining cleanroom certification workflows.
+                \item Collaborated with multidisciplinary teams to enhance cleanroom compliance with ISO standards and improve operational efficiency.
+            \end{highlights}
+        \end{onecolentry}
 
-\noindent \textbf{Electromagnetic Flowmeter Design} \hfill \textit{Team Leader, September 2021}
-\begin{itemize}[leftmargin=*,itemsep=1pt]
-    \item Designed and tested an electromagnetic flowmeter for conductive media, addressing signal amplification and interference for accurate measurement.
-\end{itemize}
+        \vspace{0.2 cm}
 
-\noindent \textbf{Power Allocation Planning in Time Trials (2022 MCM/ICM)} \hfill \textit{Paper Writer \& Programmer, February 2022}
-\begin{itemize}[leftmargin=*,itemsep=1pt]
-    \item Developed an OmPD model for optimizing power curves and energy distribution in time trials, published in Heilongjiang Science.
-\end{itemize}
+    \section{Skills}
 
-\section*{Honors and Awards}
-\hrule
+    \begin{onecolentry}
+        \textbf{Programming:} Python, MATLAB, C++ 
+    \end{onecolentry}
 
-\vspace{3mm}
+    \vspace{0.2 cm}
 
-\noindent\textbf{Major Honors:}
-\begin{itemize}[leftmargin=*,itemsep=1pt]
-    \item \textbf{National Scholarship (2021)}: Awarded to top 1\% in department for academic excellence.
-    \item \textbf{First Prize, National Mathematics Competition (China, 2020)}: Top 8\% of participants.
-    \item \textbf{Third Prize, Mechanics Competition of Zhou Peiyuan (China, 2021)}: Recognized for excellence in mechanics.
-    \item \textbf{Top 5 in China, iCAN Innovation Contest (2021)}: Ranked 5th out of 3000 teams nationally (Group Award).
-\end{itemize}
+    \begin{onecolentry}
+        \textbf{Software:} ANSYS CFX, Fluent, COMSOL, Mimics, 3-Matic, Blender, AutoCAD, SOLIDWORKS 
+    \end{onecolentry}
 
-\vspace{3mm}
+    \vspace{0.2 cm}
 
-\noindent\textbf{Mathematics:}
-\begin{itemize}[leftmargin=*,itemsep=1pt]
-    \item First Prize, National Mathematics Competition for College Students (Top 8\%), 2020
-    \item First Prize, Mathematical Modeling Competition in Liaoning Province, 2021
-    \item Second Prize, Mathematical Modeling Competition in Liaoning Province, 2020
-    \item Second Prize, National Mathematics Competition for College Students, 2021
-    \item Third Prize, China CUMCM (Contemporary Undergraduate Mathematical Contest in Modeling), 2021
-    \item Third Prize, MathorCup Undergraduate Mathematical Modeling Challenge, 2021
-    \item Second Prize, Asia Pacific Mathematical Contest in Modeling, 2020
-    \item Second Prize, Mathematical Contest in Modeling of Three Provinces in Northeast China, 2020
-\end{itemize}
+    \begin{onecolentry}
+        \textbf{Tools:} Git, \LaTeX 
+    \end{onecolentry}
 
-\vspace{3mm}
 
-\noindent\textbf{Physics:}
-\begin{itemize}[leftmargin=*,itemsep=1pt]
-    \item Third Prize, Mechanics Competition in Honour of Zhou Peiyuan, 2021
-    \item First Prize, Physics Experiment Competition in Liaoning Province, 2020
-\end{itemize}
+    \section{Honors and Awards}
 
-\vspace{3mm}
+    \begin{highlights}
+        \item \textbf{National Scholarship (2021)}: Awarded to top 1\% in department for academic excellence.
+        \item \textbf{First Prize, National Mathematics Competition (China, 2020)}: Top 8\% of participants.
+        \item \textbf{Third Prize, Mechanics Competition of Zhou Peiyuan (China, 2021)}: Recognized for excellence in mechanics.
+        \item \textbf{Top 5 in China, iCAN Innovation Contest (2021)}: Ranked 5th out of 3000 teams nationally (Group Award).
+    \end{highlights}
 
-\noindent\textbf{Innovation and Design:}
-\begin{itemize}[leftmargin=*,itemsep=1pt]
-    \item iCAN Innovation Contest (Finalist), Top 5 in China, 2021
-    \item Third Prize, China College Students' “Internet+” Innovation and Entrepreneurship Competition, 2021
-    \item Second Prize, The 6th China International “Internet+” College Student Innovation and Entrepreneurship Competition SAU Selection, 2020
-    \item First Prize, SAU Future Engine Design Competition
-\end{itemize}
+    \vspace{0.2 cm}
 
-\vspace{2mm}
+    \section{Volunteering \& Teaching}
 
-\section*{Technical Skills}
-\hrule
-\begin{itemize}[leftmargin=*,itemsep=1pt]
-    \item \textbf{Programming:} C++, Python, MATLAB, html
-    \item \textbf{Software:} ANSYS CFX, ANSYS Fluent, COMSOL Multiphysics, OpenFOAM, SolidWorks
-    \item \textbf{Tools:} Git, LaTeX, Microsoft Office
-\end{itemize}
+    \begin{twocolentry}{
+        Dec. 2019 - Dec. 2021
+    }
+        \textbf{Student Teacher}, Shenyang Aerospace University\end{twocolentry}
 
-\vspace{2mm}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Tutored Calculus I \& II and College Physics I, including study sessions and final exam reviews.
+            \item Assisted 66 students, improving understanding and academic performance.
+            \item Created final review materials, including mind maps and instructional videos to aid retention.
+        \end{highlights}
+    \end{onecolentry}
 
-\section*{Volunteering \& Teaching}
-\hrule
+    \vspace{0.2 cm}
 
-\noindent\textbf{Core Team Member} \hfill \textit{May 2022 - Dec. 2022} \\
-SIU-SAU University Collaboration Program Student Helper
-\begin{itemize}[leftmargin=*,itemsep=1pt]
-    \item Counseled students from Shenyang Aerospace University in the SIU-SAU Collaboration program.
-    \item Negotiated with SIU's Center for International Education for course arrangements.
-    \item Provided emotional, mental, and financial support in collaboration with professional counselors.
-\end{itemize}
+    \begin{twocolentry}{
+        May 2022 - Dec. 2022
+    }
+        \textbf{Core Team Member}, SIU-SAU University Collaboration Program\end{twocolentry}
 
-\vspace{2mm} 
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Counseled students from Shenyang Aerospace University in the SIU-SAU Collaboration program.
+            \item Negotiated with SIU's Center for International Education for course arrangements.
+            \item Provided emotional, mental, and financial support in collaboration with professional counselors.
+        \end{highlights}
+    \end{onecolentry}
 
-\noindent \textbf{Student Teacher} \hfill \textit{Dec. 2019 - Dec. 2021} \\
-Shenyang Aerospace University
-\begin{itemize}[leftmargin=*,itemsep=1pt] 
-    \item Tutored Calculus I \& II and College Physics I, including study sessions and final exam reviews.
-    \item Assisted 66 students, improving understanding and academic performance.
-    \item Created final review materials, including mind maps and instructional videos to aid retention.
-\end{itemize}
+
+    \section{Other Rewards}
+
+Mathematics:
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item First Prize, National Mathematics Competition for College Students (Top 8\%), 2020
+            \item First Prize, Mathematical Modeling Competition in Liaoning Province, 2021
+            \item Second Prize, Mathematical Modeling Competition in Liaoning Province, 2020
+            \item Second Prize, National Mathematics Competition for College Students, 2021
+            \item Third Prize, China CUMCM (Contemporary Undergraduate Mathematical Contest in Modeling), 2021
+            \item Third Prize, MathorCup Undergraduate Mathematical Modeling Challenge, 2021
+            \item Second Prize, Asia Pacific Mathematical Contest in Modeling, 2020
+            \item Second Prize, Mathematical Contest in Modeling of Three Provinces in Northeast China, 2020
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+Physics:
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Third Prize, Mechanics Competition in Honour of Zhou Peiyuan, 2021
+            \item First Prize, Physics Experiment Competition in Liaoning Province, 2020
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+Innovation and Design:
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item iCAN Innovation Contest (Finalist), Top 5 in China, 2021
+            \item Third Prize, China College Students' “Internet+” Innovation and Entrepreneurship Competition, 2021
+            \item Second Prize, The 6th China International “Internet+” College Student Innovation and Entrepreneurship Competition SAU Selection, 2020
+            \item First Prize, SAU Future Engine Design Competition
+        \end{highlights}
+    \end{onecolentry}
 
 \end{document}
