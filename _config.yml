@@ -20,15 +20,16 @@ enable_last_update: false
 
 # Links
 link_type: icon #text/icon
-google_scholar: https://scholar.google.com/citations?user=Itqka-wAAAAJ&hl=en
-github_link: https://github.com/yaoyao-liu/
-linkedin: https://www.linkedin.com/in/liuyaoyao/
+google_scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=Itqka-wAAAAJ
+github_link: https://github.com/ZHBALEX/
+linkedin: https://www.linkedin.com/in/haobo-zhao-035529229
 # twitter: https://twitter.com/YaoyaoLiu1/
 
 # Images 
 # avatar: https://img.yliu.me/avatar_new.jpg
 avatar: https://github.com/ZHBALEX/Haobo_Zhao_Personal_Information/blob/114d5d5d77d5de82504b5dfa84815b078a3b8691/photo_me/HaoboZhao.jpg
 avatar: zhb_personal/HaoboZhao.jpg
+avatar: zhb_personal/HaoboZhao_livi.jpg
 
 # Footnotes
 footnote: Feel free to use my website's source code.

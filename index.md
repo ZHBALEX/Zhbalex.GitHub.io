@@ -49,7 +49,7 @@ My current research involves theoretical and numerical modeling of Pancreatic Du
 - **Computation Fluid Dynamcis:** Numerical 
 - **Machine Learning:** meta-learning, incremental learning, transfer learning
 
-{% include_relative biography.md %}
+<!-- {% include_relative biography.md %} -->
 
 <!-- 
 
