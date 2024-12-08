@@ -22,7 +22,6 @@ My research interests include applying computational algorithms to real-world pr
 - **Machine Learning:** meta-learning, incremental learning, transfer learning
 
 
-
 ## Current Research 
 
 My current research involves theoretical and numerical modeling of Pancreatic Duct flows.
@@ -31,7 +30,7 @@ My current research involves theoretical and numerical modeling of Pancreatic Du
 - **Computation Fluid Dynamcis:** Numerical 
 - **Machine Learning:** meta-learning, incremental learning, transfer learning
 
-
+{% include_relative biography.md %}
 
 <!-- 
 
