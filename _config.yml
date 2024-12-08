@@ -1,14 +1,14 @@
 # Basic Information 
-title: Yaoyao Liu
-position: Assistant Professor
-affiliation: University of Illinois Urbana-Champaign
-affiliation_link: https://www.illinois.edu/
+title: Haobo Zhao
+position: ME CFD Master Student
+affiliation: Johns Hopkins University
+affiliation_link: https://www.jhu.edu/
 affiliation_logo: ./assets/img/illinois.svg
-email: lyy (at) illinois.edu
+email: hzhao67@jhu.edu
 
 # Search Engine Optimization (SEO)
 keywords: yaoyao liu, liu yaoyao, yaoyaoliu, liuyaoyao
-canonical: https://yaoyaoliu.web.illinois.edu
+# canonical: https://yaoyaoliu.web.illinois.edu
 description: Yaoyao Liu is an assistant professor at the University of Illinois Urbana-Champaign. His research lies in meta-learning, incremental learning, and image generation.
 
 # The option is used to enable the Illinois template.

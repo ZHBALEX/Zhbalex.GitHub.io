@@ -5,12 +5,11 @@ layout: homepage
 
 
 
-
-
-
-# WARNING: This Page is still under constuction
-
-
+---
+---
+<div style="background-color: #ffcccb; padding: 10px; border: 2px solid red; font-size: 16px;">
+<strong>⚠️ WARNING:</strong> This Page is still under construction ⚠️
+</div>
 
 
 ## About Me
@@ -50,7 +49,7 @@ My current research involves theoretical and numerical modeling of Pancreatic Du
 - **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
 - **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019. -->
 
-{% include_relative _includes/research.md %}
+<!-- {% include_relative _includes/research.md %} -->
 <!-- 
 {% include_relative _includes/publications.md %}
 
