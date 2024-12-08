@@ -2,8 +2,8 @@ main:
 
   - title: "Research02e232323: Towards General-Purpose Object-Level 3D Understanding"
     authors: Wufei Ma, Guofeng Zhang, Qihao Liu, Guanning Zeng, Adam Kortylewski, <strong>Yaoyao Liu</strong>, Alan Yuille
-    conference_short: NeurIPSwdwdwdwd
-    conference: NeurIPS 2024 Datasets and Benchmarks Track.
+    conference_short: APS DFD 2024
+    conference: American Physical Society Division of Fluid Dynamics 2024
     pdf: https://yaoyaoliu.web.illinois.edu/papers/ImageNet3D_Towards_General_Purpose_Object_Level_3D_Understanding.pdf
     bibtex: https://dblp.org/rec/journals/corr/abs-2406-09613.html?view=bibtex
     data: https://github.com/wufeim/imagenet3d

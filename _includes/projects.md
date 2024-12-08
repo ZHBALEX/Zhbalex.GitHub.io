@@ -1,24 +1,12 @@
-<h1 id="research"></h1>
+<h1 id="projects"></h1>
 
-<h2 style="margin: 60px 0px -15px;">Research <temp style="font-size:15px;">[</temp><a href="https://scholar.google.com/citations?user=Qi2PSmEAAAAJ" target="_blank" style="font-size:15px;">Google Scholar</a><temp style="font-size:15px;">]</temp><temp style="font-size:15px;">[</temp><a href="https://dblp.org/pid/12/10033-1.html" target="_blank" style="font-size:15px;">DBLP</a><temp style="font-size:15px;">]</temp></h2>
+<h2 style="margin: 60px 0px -15px;">Projects <temp style="font-size:15px;">[</temp><a href="https://scholar.google.com/citations?user=Qi2PSmEAAAAJ" target="_blank" style="font-size:15px;">Google Scholar</a><temp style="font-size:15px;">]</temp><temp style="font-size:15px;">[</temp><a href="https://dblp.org/pid/12/10033-1.html" target="_blank" style="font-size:15px;">DBLP</a><temp style="font-size:15px;">]</temp></h2>
 
 
-<div class="publications">
+<div class="projects">
 <ol class="bibliography">
 
-
-n the study of pancreatic duct diseases, the pressure drop across the duct serves as a key indicator of abnormality, often correlating with patient pain scores. By establishing a relationship between the pressure drop and patient symptoms, we can predict disease progression and recommend appropriate treatments. Traditionally, pressure drop measurements require invasive procedures, which are costly and pose significant health risks. Consequently, a non-invasive approach is urgently needed to improve diagnostic accuracy and reduce patient exposure to harmful procedures.
-
-This study introduces a computational method, incorporating Computational Fluid Dynamics (CFD), to analyze pancreatic duct flow. Using high-resolution MRI data to reconstruct a 3D model of the pancreatic duct, we simulate the fluid dynamics of pancreatic juice, which is assumed to have properties similar to water. The simulation computes the pressure drop along the duct, providing insights into the disease state. We validate our CFD results by comparing them with experimental data from real patients.
-
-
-Mindmap 1
-Furthermore, we developed a theoretical model based on duct geometry and Navier-Stokes (NS) equations, which simplifies the pressure drop prediction through numerical integration, without relying on full CFD simulations. The theoretical model incorporates duct parameters such as cross-sectional area, length, curvature, and surface convexity, and achieves prediction errors within 0%-20% when compared to CFD results. This model offers a cost-effective and time-efficient alternative for predicting pressure drop in clinical settings.
-
-
-
-s
-{% for link in site.data.research.main %}
+{% for link in site.data.publications.main %}
 
 <li>
 <div class="pub-row">
@@ -61,6 +49,62 @@ s
 <br>
 
 {% endfor %}
+
+
+
+
+
+
+
+
+
+{% for link in site.data.publications.main %}
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+            <abbr class="badge">{{ link.conference_short }}</abbr>
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
+      <div class="author">{{ link.authors }}</div>
+      <div class="periodical"><em>{{ link.conference }}</em>
+      </div>
+    <div class="links">
+      {% if link.pdf %} 
+      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      {% endif %}
+      {% if link.code %} 
+      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      {% endif %}
+      {% if link.page %} 
+      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+      {% endif %}
+      {% if link.data %} 
+      <a href="{{ link.data }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Dataset</a>
+      {% endif %}
+      {% if link.bibtex %} 
+      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+      {% endif %}
+      {% if link.notes %} 
+      <strong> <i style="color:#e74d3c; font-weight:600">{{ link.notes }}</i></strong>
+      {% endif %}
+      {% if link.others %} 
+      {{ link.others }}
+      {% endif %}
+    </div>
+  </div>
+</div>
+</li>
+
+<br>
+
+{% endfor %}
+
+
+
+
 
 <!-- <li>
 <div class="pub-row">
