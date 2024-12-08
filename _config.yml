@@ -1,57 +1,46 @@
 # Basic Information 
-title: Haobo Zhao
-position: Master Student
-affiliation: Johns Hopkins University
-email: Hzhao67@jhu.edu
+title: Yaoyao Liu
+position: Assistant Professor
+affiliation: University of Illinois Urbana-Champaign
+affiliation_link: https://www.illinois.edu/
+affiliation_logo: ./assets/img/illinois.svg
+email: lyy (at) illinois.edu
 
 # Search Engine Optimization (SEO)
-# The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+keywords: yaoyao liu, liu yaoyao, yaoyaoliu, liuyaoyao
+canonical: https://yaoyaoliu.web.illinois.edu
+description: Yaoyao Liu is an assistant professor at the University of Illinois Urbana-Champaign. His research lies in meta-learning, incremental learning, and image generation.
 
-# Links 
-# If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/
-cv_link: assets/files/curriculum_vitae.pdf
-github_link: https://github.com/
-linkedin: https://www.linkedin.com/
-twitter: https://twitter.com/
+# The option is used to enable the Illinois template.
+enable_hopkins_logo: true
 
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
+# The option is used to show the last update time.
+enable_last_update: false
 
-# Footnote
-# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
-enable_footnote: true
+# Links
+link_type: icon #text/icon
+google_scholar: https://scholar.google.com/citations?user=Qi2PSmEAAAAJ
+github_link: https://github.com/yaoyao-liu/
+linkedin: https://www.linkedin.com/in/liuyaoyao/
+twitter: https://twitter.com/YaoyaoLiu1/
 
-# Auto Dark Mode
-# You may use the option to disable the automatic dark theme
-auto_dark_mode: true
+# Images 
+avatar: https://img.yliu.me/avatar_new.jpg
 
-# Font
-# You can use this option to choose between Serif or Sans Serif fonts.
-font: "Serif" # or "Sans Serif"
+# Footnotes
+footnote: Feel free to use my website's source code.
+footnote_link: https://github.com/yaoyao-liu/minimal-light
 
-# Google Analytics ID
-# Please remove this if you don't use Google Analytics
-google_analytics: UA-111540567-4
-
-# Use this project as a remote theme for GitHub Pages
-# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-remote_theme: yaoyao-liu/minimal-light
+# Analytics
+# Please remove the following lines about analytics services if you fork my project. 
+# Otherwise, the analytics information of your website will be recorded to my ClustrMaps accounts.
+clustrmaps_id: CJD8XwsJhSyQ6sbsU-Gw0cNcUlbah7KW3xvHN2QlwW0
 
 # The following files will be removed from the generated website.
 exclude:
+  - build.sh
   - Gemfile
   - Gemfile.lock
   - README.md
-  - README_zh_Hans.md
-  - README_zh_Hant.md
-  - README_de.md
   - LICENSE
-  - minimal-light.gemspec
-  - html_source_file/
+  - CNAME
