@@ -10,7 +10,8 @@ main:
     page: https://imagenet3d.github.io/
     image: https://img.yliu.me/teaser/imagenet3d.png
     image: PD_study/PD_Overview.jpg
-
+    image: https://github.com/ZHBALEX/Zhbalex.GitHub.io/blob/bb02f10ddff717e073a1df3b6b4ec486edaccecb/zhb_personal/HaoboZhao_livi.jpg
+    image: https://github.com/ZHBALEX/Zhbalex.GitHub.io/zhb_personal/HaoboZhao_livi.jpg
 
   # - title: "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting"
   #   authors: Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang, Xiaokang Yang, <strong>Yaoyao Liu</strong>, Alan Yuille
