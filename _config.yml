@@ -20,10 +20,10 @@ enable_last_update: false
 
 # Links
 link_type: icon #text/icon
-google_scholar: https://scholar.google.com/citations?user=Qi2PSmEAAAAJ
+google_scholar: https://scholar.google.com/citations?user=Itqka-wAAAAJ&hl=en
 github_link: https://github.com/yaoyao-liu/
 linkedin: https://www.linkedin.com/in/liuyaoyao/
-twitter: https://twitter.com/YaoyaoLiu1/
+# twitter: https://twitter.com/YaoyaoLiu1/
 
 # Images 
 # avatar: https://img.yliu.me/avatar_new.jpg
