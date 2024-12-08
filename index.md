@@ -14,7 +14,14 @@ layout: homepage
 
 ## About Me
 
-I am a master's student focusing on Computational Fluid Dynamics (CFD) combined with biofluid mechanics at Johns Hopkins University, under the guidance of Dr. Rajat Mittal and Dr. Jung-Hee Seo.
+I am a master's student focusing on 
+[Computational Fluid Dynamics (CFD)](https://engineering.jhu.edu/fsag/)
+combined with 
+[biofluid mechanics ](https://engineering.jhu.edu/fsag/research/)
+at Johns Hopkins University [FPCL](https://engineering.jhu.edu/fsag/)
+, under the guidance of 
+[Dr. Rajat Mittal](https://me.jhu.edu/faculty/rajat-mittal/) and 
+[Dr. Jung-Hee Seo](https://engineering.jhu.edu/fsag/people/faculty/jung_hee_seo/).
 
 
 
