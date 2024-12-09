@@ -1,13 +1,13 @@
 main:
 
-  - title: "Pancreatic Duct FLow______1: Towards General-Purpose Object-Level 3D Understanding"
-    authors: Wufei Ma, Guofeng Zhang, Qihao Liu, Guanning Zeng, Adam Kortylewski, <strong>Yaoyao Liu</strong>, Alan Yuille
+  - title: "Computational Modeling of Pancreatic Duct Flows for a Novel Non-invasive Diagnosis of Chronic Pancreatitis*"
+    authors: Haobo Zhao, Jung-Hee Seo, Venkata Akshintala, Ibadat Boparai, Rajat Mittal
     conference_short: APS DFD 2024
     conference: American Physical Society Division of Fluid Dynamics 2024
-    pdf: https://github.com/ZHBALEX/Numerical-CFD/blob/7f61243baac55a16769e8968a193e1c319b6d3c8/CFD_FInal_Circular_Cylinder_Flow.pdf
-    bibtex: https://dblp.org/rec/journals/corr/abs-2406-09613.html?view=bibtex
-    data: https://github.com/wufeim/imagenet3d
-    page: https://imagenet3d.github.io/
+    # pdf: https://meetings.aps.org/Meeting/DFD24/Session/ZC16.10
+    # bibtex: https://dblp.org/rec/journals/corr/abs-2406-09613.html?view=bibtex
+    # data: https://github.com/wufeim/imagenet3d
+    page: https://meetings.aps.org/Meeting/DFD24/Session/ZC16.10
     image: https://img.yliu.me/teaser/imagenet3d.png
     image: https://github.com/ZHBALEX/Zhbalex.GitHub.io/blob/master/PD_study/PD_Overview.jpg?raw=true
 

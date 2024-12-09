@@ -18,8 +18,8 @@ main:
   - title: "Biography"
     url: /biography/
 
-  - title: "Publications"
-    url: /publications/
+  # - title: "Publications"
+  #   url: /publications/
 
   - title: "Projects"
     url: /projects/
