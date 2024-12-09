@@ -1,4 +1,12 @@
-# yaoyao-liu.github.io
+# Haobo Zhao.github.io
+
+This website is modified based on Prof. Liu's website, please check the following informationa:
+
+yaoyao-liu.github.io   link: https://github.com/yaoyao-liu/yaoyao-liu.github.io
+
+```bash
+bundle exec jekyll server
+```
 
 [![LICENSE](https://img.shields.io/github/license/yaoyao-liu/minimal-light?style=flat-square&logo=creative-commons&color=EF9421)](https://github.com/yaoyao-liu/yaoyao-liu.github.io/blob/main/LICENSE)
 

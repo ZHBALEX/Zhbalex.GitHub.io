@@ -1,6 +1,6 @@
 <h1 id="research"></h1>
 
-<h2 style="margin: 60px 0px -15px;">Research <temp style="font-size:15px;">[</temp><a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=Itqka-wAAAAJ" target="_blank" style="font-size:15px;">Google Scholar</a><temp style="font-size:15px;">]</temp>
+<h2 style="margin: 60px 0px -15px;">Research <temp style="font-size:15px;">[</temp><a href="https://zhbalex.github.io/research/" target="_blank" style="font-size:15px;">More Info</a><temp style="font-size:15px;">]</temp>
 <!-- <temp style="font-size:15px;">[</temp><a href="https://dblp.org/pid/12/10033-1.html" target="_blank" style="font-size:15px;">DBLP</a><temp style="font-size:15px;">]</temp> -->
 </h2>
 
