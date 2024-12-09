@@ -194,9 +194,11 @@
       </header>
       <section>
 
-      <h1 id="projects"></h1>
+      <!-- 
+<h1 id="projects"></h1>
 
 <h2 style="margin: 60px 0px -15px;">Projects <temp style="font-size:15px;">[</temp><a href="https://scholar.google.com/citations?user=Qi2PSmEAAAAJ" target="_blank" style="font-size:15px;">Google Scholar</a><temp style="font-size:15px;">]</temp><temp style="font-size:15px;">[</temp><a href="https://dblp.org/pid/12/10033-1.html" target="_blank" style="font-size:15px;">DBLP</a><temp style="font-size:15px;">]</temp></h2>
+
 
 <div class="publications">
 <ol class="bibliography">
@@ -208,7 +210,7 @@ PPPPPPPPPPP
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="https://github.com/ZHBALEX/Zhbalex.GitHub.io/blob/master/PD_study/PD_Overview.jpg?raw=true" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="https://github.com/ZHBALEX/Zhbalex.GitHub.io/blob/master/PD_study/PD_Overview.jpg?raw=true" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
             <abbr class="badge">NeurIPS</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -237,7 +239,7 @@ PPPPPPPPPPP
 </div>
 </li>
 
-<br />
+<br>
 
 
 
@@ -303,21 +305,45 @@ PPPPPPPPPPP
 </div>
 </li> -->
 
-</ol>
+<p>&lt;/ol&gt;
+&lt;/div&gt;</p>
+
+<p>–&gt;</p>
+
+<h1 id="circular-cylinder-cross-flow--ibm-solver-2024-pdf">Circular Cylinder Cross Flow – IBM Solver (2024) PDF</h1>
+
+<p>This time we applied our discretized Navier-Stokes Solver to simulate flow around 2D substance. We also implemented Immersed Boundary Method (IBM) with stairs step method for inner boundary.</p>
+
+<div>
+        <img src="https://github.com/ZHBALEX/Numerical-CFD/blob/main/CFD%20Projects/CFD_Final_Circular_Cylinder_Cross-Flow/figs/cylinderresult.png?raw=true" height="" width="600" alt="Mindmap 1" />
+      </div>
+
+<p>We validated our solver based on uniform flow and channel flow, and 
+        simulated flow across a circular cylinder, Elliptic Cylinder at different Re. We validated our findings against existing literature.</p>
+
+<div>
+          <img src="https://github.com/ZHBALEX/Numerical-CFD/blob/main/CFD%20Projects/CFD_Final_Circular_Cylinder_Cross-Flow/figs/ellipticresult.png?raw=true" height="" width="600" alt="Mindmap 1" />
+        </div>
+
+<p>We further explored the impact of domain size, grid resolution, and Reynolds number on flow behavior. Our results showed that smaller domain sizes and higher Reynolds numbers accelerate flow evolution and promote earlier vortex shedding. Coarser grid resolution delayed vortex shedding, highlighting the importance of grid resolution in fluid dynamics.</p>
+
+<h1 id="2d-ns-solvercn2ab2-2024-pdf">2D NS Solver–CN2+AB2 (2024) PDF</h1>
+
+<p>We developed a Navier-Stokes (N-S) solver using 2𝑛𝑑 order central difference scheme in space and a second order (AB2 for convection and CN2 for viscous) fractional step in time. By separate update of the face velocity (“semi-staggered” approach), we could approach zero divergence with the compact stencil for pressure. We validated our solver based on uniform flow and channel flow, and compared our result with theordically solution.</p>
+
+<div>
+      <img src="https://github.com/ZHBALEX/Numerical-CFD/blob/main/CFD%20Projects/CFD_HW4_Lid_Driven_Cavity/figs/Solver_Architecture.jpg?raw=true" height="" width="" alt="Mindmap 1" />
 </div>
 
-<p>dedwdwdwdwddw
-d
-dwd
-wd
-wd
-wd
-wdw</p>
+<h1 id="lid-driven-cavity--2d-ns-solver-2024-pdf">Lid Driven Cavity – 2D NS Solver (2024) PDF</h1>
 
-<p>dwddwd
-dwdw
-dwdwd
-wdwdw</p>
+<p>In this project, we developed a N-S solver for Lid Driven Cavity problem, which use 2𝑛𝑑 order central difference scheme in space and a second order (AB2 for con- vection and CN2 for viscous) fractional step in time. By separate update of the face velocity (“semi-staggered” approach), we could approach zero divergence with the compact stencil for pressure. We also used ghost point method to obtain boundary condition. By compare our result with the reference result, we could say our result is robust.</p>
+
+<div>
+        <img src="https://github.com/ZHBALEX/Numerical-CFD/blob/main/CFD%20Projects/CFD_HW4_Lid_Driven_Cavity/figs/Compare.jpg?raw=true" height="" width="300" alt="Mindmap 1" />
+        <img src="https://github.com/ZHBALEX/Numerical-CFD/blob/main/CFD%20Projects/CFD_HW4_Lid_Driven_Cavity/figs/Error.png?raw=true" height="" width="180" alt="Mindmap 1" />
+      </div>
+
 
 
       <br>

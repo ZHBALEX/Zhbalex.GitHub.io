@@ -17,7 +17,13 @@ Our research focused on pancreatic duct flow to create a diagnostic tool for chr
 
 ### From CFD to Analytical Solution
 
-Beyond simulations, we developed an analytical model for pressure drop prediction using a quasi-one-dimensional approach derived from the Navier–Stokes equations. We automated the workflow from medical imaging to pressure prediction with tools like the Vascular Modeling Toolkit and NeuroMorph for geometric parameter extraction. To enhance accuracy, we integrated physics-informed neural networks (PINNs) with encoder-decoder architectures, capturing nonlinear flux components and accommodating diverse anatomical geometries. This interdisciplinary research, presented at the 2024 APS Division of Fluid Dynamics Annual Meeting, underscores CFD’s pivotal role in advancing biomedical diagnostics and improving patient outcomes.
+Beyond simulations, we developed an analytical model for pressure drop prediction using a quasi-one-dimensional approach derived from the Navier–Stokes equations. We automated the workflow from medical imaging to pressure prediction with tools like the Vascular Modeling Toolkit and NeuroMorph for geometric parameter extraction. To enhance accuracy, we integrated physics-informed neural networks (PINNs) with encoder-decoder architectures, capturing nonlinear flux components and accommodating diverse anatomical geometries. This interdisciplinary research, presented at the <a 
+              href="https://meetings.aps.org/Meeting/DFD24/Session/ZC16.10" 
+              target="_blank" 
+              style="font-size:15px;"> 
+              American Physical Society Division of Fluid Dynamics 2024 
+              </a> 
+              , underscores CFD’s pivotal role in advancing biomedical diagnostics and improving patient outcomes.
 
 
 
