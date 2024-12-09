@@ -7,9 +7,9 @@ layout: homepage
 
 ---
 ---
-<div style="background-color: #ffcccb; padding: 10px; border: 2px solid red; font-size: 16px;">
+<!-- <div style="background-color: #ffcccb; padding: 10px; border: 2px solid red; font-size: 16px;">
 <strong>⚠️ WARNING:</strong> This Page is still under construction ⚠️
-</div>
+</div> -->
 
 
 ## About Me
@@ -51,4 +51,7 @@ My current research involves theoretical and numerical modeling of Pancreatic Du
  -->
 
 {% include_relative _includes/research.md %}
+
+
+
 

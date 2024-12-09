@@ -30,6 +30,12 @@ main:
   - title: "CV"
     url: CV/CV_Haobo_Zhao_2024.pdf
 
+  # - title: "CV"
+  #   url: /CV.html
+  
+  # - title: "CV"
+  #   url: /CV/
+
   - title: "Home"
     url: /
 
