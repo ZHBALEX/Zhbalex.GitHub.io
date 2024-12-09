@@ -9,7 +9,7 @@ permalink: /research/
 
 
 ## Pancreatic Duct FLow 
-We developed a non-invasive diagnostic method for chronic pancreatitis by integrating ERCP data with CFD to predict pancreatic ductal hypertension. This involved reconstructing 3D MRI models, setting flow-based boundary conditions, and validating pressure distributions with clinical data. Additionally, we created an analytical model and automated the imaging-to-pressure workflow using advanced toolkits and PINNs, enhancing accuracy across diverse anatomies. Presented at the 2024 APS meeting, our work highlights CFD’s crucial role in advancing diagnostics and improving patient outcomes.
+We developed a **non-invasive** diagnostic method for **chronic pancreatitis** by integrating ERCP data with **CFD** to predict pancreatic ductal **hypertension**. This involved reconstructing 3D MRI models, setting flow-based boundary conditions, and validating pressure distributions with clinical data. Additionally, we created an analytical model and automated the **imaging-to-pressure workflow** using advanced toolkits and PINNs, enhancing accuracy across diverse anatomies. Presented at the **2024 APS meeting**, our work highlights CFD’s crucial role in advancing diagnostics and improving patient outcomes.
 
 ### From PD Flow to CFD
 
