@@ -29,3 +29,20 @@ I completed my bachelor’s degree at
 [Southern Illinois University](https://siu.edu) and 
 [Shenyang Aerospace University](https://en.sau.edu.cn), 
 specializing in Aircraft Powerplant Engineering. My studies included fluid dynamics, energy systems, and mechanical engineering. I also gained hands-on experience in the assembly, maintenance, and design of propulsion engines.
+
+<div>
+        <img src="https://zhbalex.github.io/Appendix/Sketches/Building_QDChurch.jpg" height="" width="600" alt="Mindmap 1">
+</div>
+
+
+
+<div>
+        <img src="https://zhbalex.github.io/Appendix/Sketches/Building_QDgov.jpg" height="" width="250" alt="Mindmap 1">
+        <img src="https://zhbalex.github.io/Appendix/Sketches/Building_QDhouse.jpg" height="" width="250" alt="Mindmap 1">
+</div>
+<!-- 
+<div style="text-align: center;">
+    <img src="https://github.com/ZHBALEX/Numerical-CFD/blob/main/CFD%20Projects/CFD_Final_Circular_Cylinder_Cross-Flow/figs/cylinderresult.png?raw=true" 
+         width="400" 
+         alt="Mindmap 1">
+</div> -->
