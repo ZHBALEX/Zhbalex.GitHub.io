@@ -1,0 +1,53 @@
+<header>
+  {% if site.avatar %}
+  <a class="image avatar" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+    <img src="{{ site.avatar | relative_url }}" alt="{{ site.title }}">
+  </a>
+  {% endif %}
+
+  <h1>{{ site.title }}</h1>
+
+  {% if site.position %}
+  <position>{{ site.position }}</position>
+  <br>
+  {% endif %}
+  {% if site.affiliation %}
+  <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
+  <br>
+  {% endif %}
+  {% if site.email %}
+  <email>{{ site.email }}</email>
+  {% endif %}
+  {% if site.email2 %}
+  <br>
+  <email>{{ site.email2 }}</email>
+  {% endif %}
+
+  <div class="social-icons" aria-label="Profile links">
+    {% if site.google_scholar %}
+    <a href="{{ site.google_scholar }}" aria-label="Google Scholar">
+      <i class="ai ai-google-scholar"></i>
+    </a>
+    {% endif %}
+    {% if site.cv_link %}
+    <a href="{{ site.cv_link | relative_url }}" aria-label="Curriculum Vitae">
+      <i class="ai ai-cv"></i>
+    </a>
+    {% endif %}
+    {% if site.github_link %}
+    <a href="{{ site.github_link }}" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    {% endif %}
+    {% if site.linkedin %}
+    <a href="{{ site.linkedin }}" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    {% endif %}
+    {% if site.twitter %}
+    <a href="{{ site.twitter }}" aria-label="X">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+    {% endif %}
+  </div>
+</header>

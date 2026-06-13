@@ -1,17 +1,11 @@
 ---
 layout: default
-title: Research
-permalink: /research/
+title: CV
+permalink: /cv/
 ---
 
----
----
-qqwqw
-w
-qwq
-w
-qw
-qw
-qw
-q
-wqw
+## Curriculum Vitae
+
+You can view or download my current CV here:
+
+[Download CV]({{ '/CV/CV_Haobo_Zhao_2024.pdf' | relative_url }})

@@ -1,6 +1,6 @@
 # Basic Information 
 title: Haobo Zhao
-position: ME CFD Master Student
+position: MSE Mechanical Engineering Student
 affiliation: Johns Hopkins University
 affiliation_link: https://www.jhu.edu/
 # affiliation_logo: ./assets/img/whiting.logo.horizontal.white.svg
@@ -8,9 +8,9 @@ affiliation_link: https://www.jhu.edu/
 email: hzhao67@jhu.edu
 
 # Search Engine Optimization (SEO)
-keywords: yaoyao liu, liu yaoyao, yaoyaoliu, liuyaoyao
-# canonical: https://yaoyaoliu.web.illinois.edu
-description: Yaoyao Liu is an assistant professor at the University of Illinois Urbana-Champaign. His research lies in meta-learning, incremental learning, and image generation.
+keywords: Haobo Zhao, computational fluid dynamics, CFD, biofluid mechanics, pancreatic duct flow, Johns Hopkins University
+url: https://zhbalex.github.io
+description: Haobo Zhao is a mechanical engineering master's student at Johns Hopkins University working on computational fluid dynamics, biofluid mechanics, pancreatic duct flow, and scientific computing.
 
 # The option is used to enable the Illinois template.
 enable_hopkins_logo: true
@@ -23,14 +23,14 @@ link_type: icon #text/icon
 google_scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=Itqka-wAAAAJ
 github_link: https://github.com/ZHBALEX/
 linkedin: https://www.linkedin.com/in/haobo-zhao-035529229
-# twitter: https://twitter.com/YaoyaoLiu1/
+cv_link: /CV/CV_Haobo_Zhao_2024.pdf
 
 # Images 
 # avatar: https://img.yliu.me/avatar_new.jpg
 # avatar: https://github.com/ZHBALEX/Haobo_Zhao_Personal_Information/blob/114d5d5d77d5de82504b5dfa84815b078a3b8691/photo_me/HaoboZhao.jpg
 # avatar: zhb_personal/HaoboZhao.jpg
 # avatar: https://github.com/ZHBALEX/Zhbalex.GitHub.io/zhb_personal/HaoboZhao_livi.jpg
-avatar: https://github.com/ZHBALEX/Zhbalex.GitHub.io/blob/master/zhb_personal/HaoboZhao_livi.jpg?raw=true
+avatar: /zhb_personal/HaoboZhao_livi.jpg
 # right click of the image on github page to copy address
 
 # Footnotes

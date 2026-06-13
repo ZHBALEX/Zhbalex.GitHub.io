@@ -3,50 +3,31 @@ layout: default
 title: Projects
 permalink: /projects/
 ---
-<!-- 
-{% include_relative _includes/projects.md %} -->
 
+## Circular Cylinder Cross Flow with an IBM Solver
 
-# Circular Cylinder Cross Flow -- IBM Solver (2024) PDF
+I implemented a two-dimensional incompressible Navier-Stokes solver for flow around immersed bodies. The project used an immersed boundary method with a stair-step representation of the solid boundary, then tested circular and elliptic cylinders across different Reynolds numbers.
 
-This time we applied our discretized Navier-Stokes Solver to simulate flow around 2D substance. We also implemented Immersed Boundary Method (IBM) with stairs step method for inner boundary.
-
-<div style="text-align: center;">
-    <img src="https://github.com/ZHBALEX/Numerical-CFD/blob/main/CFD%20Projects/CFD_Final_Circular_Cylinder_Cross-Flow/figs/cylinderresult.png?raw=true" 
-         width="400" 
-         alt="Mindmap 1">
+<div class="project-images">
+  <img src="{{ '/Appendix/CFD_FInal/cylinderresult.png' | relative_url }}" alt="Circular cylinder flow result">
+  <img src="{{ '/Appendix/CFD_FInal/ellipticresult.png' | relative_url }}" alt="Elliptic cylinder flow result">
 </div>
 
-We validated our solver based on uniform flow and channel flow, and 
-        simulated flow across a circular cylinder, Elliptic Cylinder at different Re. We validated our findings against existing literature.
+The solver was validated with uniform-flow and channel-flow cases, then compared against published cylinder-flow behavior. I also studied how domain size, grid resolution, and Reynolds number affect vortex shedding and flow evolution.
 
-<div style="text-align: center;">
-          <img src="https://github.com/ZHBALEX/Numerical-CFD/blob/main/CFD%20Projects/CFD_Final_Circular_Cylinder_Cross-Flow/figs/ellipticresult.png?raw=true" height="" width="500" alt="Mindmap 1">
-        </div>
+## Two-Dimensional Navier-Stokes Solver
 
+I developed a fractional-step Navier-Stokes solver using a second-order central difference scheme in space and a second-order time integration strategy: Adams-Bashforth for convection and Crank-Nicolson for diffusion. The semi-staggered face-velocity update helped keep the velocity field close to divergence-free while using a compact pressure stencil.
 
-We further explored the impact of domain size, grid resolution, and Reynolds number on flow behavior. Our results showed that smaller domain sizes and higher Reynolds numbers accelerate flow evolution and promote earlier vortex shedding. Coarser grid resolution delayed vortex shedding, highlighting the importance of grid resolution in fluid dynamics.
-
-
-
-
-# 2D NS Solver--CN2+AB2 (2024) PDF
-
-We developed a Navier-Stokes (N-S) solver using 2𝑛𝑑 order central difference scheme in space and a second order (AB2 for convection and CN2 for viscous) fractional step in time. By separate update of the face velocity (“semi-staggered” approach), we could approach zero divergence with the compact stencil for pressure. We validated our solver based on uniform flow and channel flow, and compared our result with theordically solution.
-
-<div style="text-align: center;">
-      <img src="https://github.com/ZHBALEX/Numerical-CFD/blob/main/CFD%20Projects/CFD_HW4_Lid_Driven_Cavity/figs/Solver_Architecture.jpg?raw=true" height="" width="500" alt="Mindmap 1">
+<div class="project-images">
+  <img src="{{ '/Appendix/CFD_HW4/Solver_Architecture.jpg' | relative_url }}" alt="Navier-Stokes solver architecture">
 </div>
 
+## Lid-Driven Cavity Flow
 
+I applied the solver to the lid-driven cavity benchmark with ghost-point boundary treatment. The results were compared with reference solutions to evaluate robustness and grid sensitivity.
 
-# Lid Driven Cavity -- 2D NS Solver (2024) PDF
-
-In this project, we developed a N-S solver for Lid Driven Cavity problem, which use 2𝑛𝑑 order central difference scheme in space and a second order (AB2 for con- vection and CN2 for viscous) fractional step in time. By separate update of the face velocity (“semi-staggered” approach), we could approach zero divergence with the compact stencil for pressure. We also used ghost point method to obtain boundary condition. By compare our result with the reference result, we could say our result is robust.
-
-<div style="text-align: center;">
-        <img src="https://github.com/ZHBALEX/Numerical-CFD/blob/main/CFD%20Projects/CFD_HW4_Lid_Driven_Cavity/figs/Compare.jpg?raw=true" height="" width="300" alt="Mindmap 1">
-        <img src="https://github.com/ZHBALEX/Numerical-CFD/blob/main/CFD%20Projects/CFD_HW4_Lid_Driven_Cavity/figs/Error.png?raw=true" height="" width="180" alt="Mindmap 1">
-      </div>
-
-
+<div class="project-images">
+  <img src="{{ '/Appendix/CFD_HW4/Compare.jpg' | relative_url }}" alt="Lid-driven cavity comparison">
+  <img src="{{ '/Appendix/CFD_HW4/Error.png' | relative_url }}" alt="Lid-driven cavity error plot">
+</div>

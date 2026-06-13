@@ -1,25 +1,6 @@
 main:
-
-  # - title: "Teaching"
-  #   url: /teaching/
-  #   right: true 
-
-  # - title: "Services"
-  #   url: /services/
-
-  # - title: "Talks"
-  #   url: /talks/
-
-  #- title: "Teaching"
-  #  url: ./teaching.html
-
-  
-
   - title: "Biography"
     url: /biography/
-
-  # - title: "Publications"
-  #   url: /publications/
 
   - title: "Projects"
     url: /projects/
@@ -28,15 +9,7 @@ main:
     url: /research/
 
   - title: "CV"
-    url: CV/CV_Haobo_Zhao_2024.pdf
-
-  # - title: "CV"
-  #   url: /CV.html
-  
-  # - title: "CV"
-  #   url: /CV/
+    url: /cv/
 
   - title: "Home"
     url: /
-
-  

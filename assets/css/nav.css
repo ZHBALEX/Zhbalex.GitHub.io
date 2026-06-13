@@ -2,9 +2,9 @@
 .topnav {
     background-color: #13294B;
     overflow: hidden;
-	  position:fixed;
-	  z-index:999;
-    width:100%;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
   }
 
 
@@ -12,7 +12,7 @@
     display: inline;
   }
 
-.topnav a.icon {
+.topnav button.icon {
     display: none;
 }
 
@@ -116,16 +116,14 @@
    }
 
   
-   @media print, screen and (max-width: 480px) { 
-    .topnav #myLinks {
-        display: none;
-      }
-   }
-
    @media print, screen and (max-width: 960px) { 
 
     .topnav #myLinks {
         display: none;
+      }
+
+      .topnav #myLinks.is-open {
+        display: block;
       }
 
       .topnav a.normal {
@@ -137,16 +135,18 @@
         display: block;
       }
 
-      .topnav a.icon {
+      .topnav button.icon {
+        background: transparent;
+        border: 0;
         color: white;
         display: block;
         padding: 10px 16px;
         font-size: 17px;
         position: absolute;
-        float: right;
         right: 0;
         top: 0;
         margin-right:5%;
+        cursor: pointer;
       }
 
       .topnav a.right {

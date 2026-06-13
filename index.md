@@ -1,57 +1,20 @@
 ---
 layout: homepage
+title: Home
 ---
-
-
-
-
----
----
-<!-- <div style="background-color: #ffcccb; padding: 10px; border: 2px solid red; font-size: 16px;">
-<strong>⚠️ WARNING:</strong> This Page is still under construction ⚠️
-</div> -->
-
 
 ## About Me
 
-I am a master’s student focusing on 
-[Computational Fluid Dynamics (CFD)](https://engineering.jhu.edu/fsag/) 
-combined with 
-[biofluid mechanics](https://engineering.jhu.edu/fsag/research/) 
-at **Johns Hopkins University** in the 
-[FPCL](https://engineering.jhu.edu/fsag/), 
-where I am fortunate to be advised by 
-[Dr. Rajat Mittal](https://me.jhu.edu/faculty/rajat-mittal/) and 
-[Dr. Jung-Hee Seo](https://engineering.jhu.edu/fsag/people/faculty/jung_hee_seo/). 
-My current research focuses on **pancreatic duct flow** and the development of integrated computational tools to help identify chronic pancreatitis caused by **hypertension**, aiming to create a better future for patients.
+I am a master's student in Mechanical Engineering at **Johns Hopkins University**, working at the intersection of [computational fluid dynamics](https://engineering.jhu.edu/fsag/), [biofluid mechanics](https://engineering.jhu.edu/fsag/research/), and scientific computing in the [Flow Physics and Computational Lab](https://engineering.jhu.edu/fsag/). I am fortunate to be advised by [Dr. Rajat Mittal](https://me.jhu.edu/faculty/rajat-mittal/) and [Dr. Jung-Hee Seo](https://engineering.jhu.edu/fsag/people/faculty/jung_hee_seo/).
 
-I completed my bachelor’s degree at 
-[Southern Illinois University](https://siu.edu) and 
-[Shenyang Aerospace University](https://en.sau.edu.cn), 
-specializing in **Aircraft Powerplant Engineering**.
+My current research focuses on pancreatic duct flow and integrated computational tools for identifying pancreatic ductal hypertension associated with chronic pancreatitis. I am especially interested in turning medical imaging, geometric modeling, CFD, and reduced-order prediction into a workflow that can support better non-invasive diagnosis.
 
+I completed my bachelor's degree at [Southern Illinois University](https://siu.edu) and [Shenyang Aerospace University](https://en.sau.edu.cn), specializing in Aircraft Powerplant Engineering.
 
 ## Research Interests
 
-My research interests focus on applying computational algorithms to real-world problems, particularly in fluid dynamics, biofluids, and aerodynamics.
-
-- **Computational Fluid Dynamics:** Numerical schemes and algorithms, CFD applications.
-- **Biological Fluid Dynamics:** Physiological fluids, pancreatic duct flow
-- **Machine Learning:** Physics-Informed Neural Networks (PINNs), geometric encoders, and multi-geometry PINNs.
-
-
-<!-- 
-## Current Research 
-
-My current research involves theoretical and numerical modeling of Pancreatic Duct flows.
-
-
-- **Computation Fluid Dynamcis:** Numerical 
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
- -->
+- **Computational Fluid Dynamics:** numerical schemes, immersed boundary methods, and CFD applications.
+- **Biological Fluid Dynamics:** physiological flows, pancreatic duct flow, and pressure prediction.
+- **Scientific Machine Learning:** physics-informed neural networks, geometry encoders, and multi-geometry models.
 
 {% include_relative _includes/research.md %}
-
-
-
-
