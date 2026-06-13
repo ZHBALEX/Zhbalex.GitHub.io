@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  6 DEC 2024 11:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.21)  12 DEC 2024 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -502,7 +502,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.410 \end{document}
+l.420 \end{document}
                      [2] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./CV_Haobo_Zhao_2024.aux)
@@ -514,13 +514,13 @@ L3 programming layer <2024-04-11>
 Here is how much of TeX's memory you used:
  15357 strings out of 474050
  259882 string characters out of 5742263
- 1951751 words of memory out of 5000000
+ 1952751 words of memory out of 5000000
  37571 multiletter control sequences out of 15000+600000
  601031 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,501b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,501b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
-Output written on CV_Haobo_Zhao_2024.pdf (2 pages, 74175 bytes).
+Output written on CV_Haobo_Zhao_2024.pdf (2 pages, 75947 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  71 compressed objects within 1 object stream

@@ -22,7 +22,7 @@
 
 blockquote { background: var(--global-bg-color); border-left: 2px solid var(--global-theme-color); margin: 1.5em 10px; padding: 0.5em 10px; font-size: 1.2rem; }
 
-@media print, screen and (min-width: 480px) {.col-sm-9 {width: 100%;}}
+@media print, screen and (min-width: 480px) {.col-sm-9 {min-width: 0;}}
 
 .publications { margin-top: 2rem; }
 
@@ -38,7 +38,9 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li { min-height: 110px; margin-bottom: 0.5rem; }
 
-.publications ol.bibliography li .abbr { height: 8rem; margin-bottom: 0.5rem; }
+.publications .pub-row { align-items: flex-start; gap: 18px; }
+
+.publications ol.bibliography li .abbr { flex: 0 0 220px; height: auto; margin-bottom: 0.5rem; position: relative; }
 
 .publications ol.bibliography li .abbr abbr { display: inline-block; background-color: var(--global-theme-color); padding-left: 1rem; padding-right: 1rem; position: absolute; top: 8px; left: 16px; }
 
@@ -72,4 +74,10 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
-.publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 123px; width: 270px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover; }
+.publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 120px; width: 220px; margin-top: 5px; margin-left: 0; margin-bottom: 5px; object-fit: cover; }
+
+@media print, screen and (max-width: 640px) {
+  .publications .pub-row { display: block; }
+  .publications ol.bibliography li .abbr { width: 100%; }
+  .publications ol.bibliography li .teaser { width: 100%; height: auto; max-height: 220px; }
+}
