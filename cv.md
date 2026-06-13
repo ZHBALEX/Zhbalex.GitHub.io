@@ -6,6 +6,18 @@ permalink: /cv/
 
 ## Curriculum Vitae
 
-You can view or download my current CV here:
+<div class="cv-actions">
+  <a class="button-link" href="{{ '/CV/CV_Haobo_Zhao_2024.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
+  <a class="button-link" href="{{ '/CV/CV_Haobo_Zhao_2024.pdf' | relative_url }}" download>Download CV</a>
+</div>
 
-[Download CV]({{ '/CV/CV_Haobo_Zhao_2024.pdf' | relative_url }})
+<div class="pdf-preview">
+  <iframe
+    src="{{ '/CV/CV_Haobo_Zhao_2024.pdf' | relative_url }}#view=FitH"
+    title="Haobo Zhao CV PDF preview">
+  </iframe>
+</div>
+
+<p class="pdf-fallback">
+  If the preview does not load, <a href="{{ '/CV/CV_Haobo_Zhao_2024.pdf' | relative_url }}" target="_blank" rel="noopener">open the PDF in a new tab</a>.
+</p>

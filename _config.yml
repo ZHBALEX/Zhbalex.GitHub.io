@@ -51,6 +51,7 @@ exclude:
   - LICENSE
   - CNAME
   - serve-local.ps1
+  - compile-cv.ps1
   - start-server.ps1
   - stop-server.ps1
   - jekyll_server.log
