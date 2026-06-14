@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.13)  13 JUN 2026 13:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.13)  14 JUN 2026 16:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -578,7 +578,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 203.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 203.
- [1
+
+(generated_publications.tex) [1
 
 {C:/Users/qd261/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/qd26
 1/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/qd261/App
@@ -587,7 +588,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.420 \end{document}
+l.410 \end{document}
                      [2]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -603,13 +604,13 @@ L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15486 strings out of 467870
- 264218 string characters out of 5418355
+ 15492 strings out of 467870
+ 264448 string characters out of 5418355
  695122 words of memory out of 5000000
- 44158 multiletter control sequences out of 15000+600000
+ 44161 multiletter control sequences out of 15000+600000
  670683 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,84p,462b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,84p,462b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/qd261/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bc
 hb8a.pfb><C:/Users/qd261/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/cha
 rter/bchr8a.pfb><C:/Users/qd261/AppData/Local/Programs/MiKTeX/fonts/type1/bitst
@@ -617,7 +618,7 @@ rea/charter/bchr8a.pfb><C:/Users/qd261/AppData/Local/Programs/MiKTeX/fonts/type
 1/bitstrea/charter/bchri8a.pfb><C:/Users/qd261/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/lm/lmsy10.pfb><C:/Users/qd261/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/lm/lmsy9.pfb>
-Output written on CV_Haobo_Zhao_2024.pdf (2 pages, 83771 bytes).
+Output written on CV_Haobo_Zhao_2024.pdf (2 pages, 83471 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)

@@ -1,0 +1,7 @@
+*.log
+CV/*.fls
+CV/*.fdb_latexmk
+CV/*.synctex.gz
+*.aux
+*.log
+*.aux

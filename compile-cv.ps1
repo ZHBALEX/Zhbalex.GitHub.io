@@ -7,4 +7,6 @@ $env:Path = "$miktex;$env:Path"
 Set-Location (Join-Path $root "CV")
 
 pdflatex -interaction=nonstopmode -file-line-error CV_Haobo_Zhao_2024.tex
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 pdflatex -interaction=nonstopmode -file-line-error CV_Haobo_Zhao_2024.tex
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

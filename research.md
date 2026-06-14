@@ -19,3 +19,5 @@ Beyond full simulations, I am developing analytical and learning-based models fo
 This work was presented at the [American Physical Society Division of Fluid Dynamics 2024](https://meetings.aps.org/Meeting/DFD24/Session/ZC16.10).
 
 {% include_relative _includes/research.md %}
+
+{% include_relative _includes/publications.md %}

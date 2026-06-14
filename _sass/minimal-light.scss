@@ -193,6 +193,25 @@ img { max-width: 100%; }
   font-size: 14px;
 }
 
+.publication-list {
+  margin-top: 10px;
+}
+
+.publication-list .publication-item {
+  min-height: 0;
+  margin-bottom: 18px;
+}
+
+.publication-list .periodical span {
+  margin-left: 6px;
+}
+
+.publication-meta,
+.publication-sync-note {
+  font-size: 14px;
+  color: #777;
+}
+
 header { width: 232px; float: left; position: fixed; -webkit-font-smoothing: subpixel-antialiased; padding-top: 5.5em; text-align: center; }
 
 header ul { list-style: none; height: 40px; padding: 0; background: #f4f4f4; border-radius: 5px; border: 1px solid #e0e0e0; width: 270px; }

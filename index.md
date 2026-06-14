@@ -18,3 +18,5 @@ I completed my bachelor's degree at [Southern Illinois University](https://siu.e
 - **Scientific Machine Learning:** physics-informed neural networks, geometry encoders, and multi-geometry models.
 
 {% include_relative _includes/research.md %}
+
+{% include_relative _includes/publications.md %}

@@ -52,6 +52,11 @@ exclude:
   - CNAME
   - serve-local.ps1
   - compile-cv.ps1
+  - update-scholar.ps1
+  - update-scholar.bat
+  - scripts
+  - google_scholar_crawler
+  - .github
   - start-server.ps1
   - stop-server.ps1
   - jekyll_server.log

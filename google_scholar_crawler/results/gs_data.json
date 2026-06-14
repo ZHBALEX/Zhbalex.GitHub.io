@@ -1,0 +1,75 @@
+{
+  "container_type": "Author",
+  "filled": [
+    "basics",
+    "publications",
+    "indices",
+    "counts"
+  ],
+  "scholar_id": "Itqka-wAAAAJ",
+  "source": "AUTHOR_PROFILE_PAGE",
+  "name": "Haobo Zhao",
+  "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=Itqka-wAAAAJ&citpid=1",
+  "affiliation": "Student, University of Virginia",
+  "organization": 10017261214577551633,
+  "interests": [
+    "Computational Fluid Dynamics",
+    "Biofluid"
+  ],
+  "email_domain": "@virginia.edu",
+  "homepage": "https://zhbalex.github.io/",
+  "citedby": 1,
+  "publications": [
+    {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Non-invasive Assessment of Pancreatic Duct Hypertension Using Computational Flow Modeling: H. Zhao et al.",
+        "pub_year": 2026,
+        "citation": "Annals of biomedical engineering, 1-15, 2026",
+        "author": "Haobo Zhao and Jung-Hee Seo and Venkata Akshintala and Surya Evani and Rajat Mittal",
+        "journal": "Annals of biomedical engineering",
+        "pages": "1-15",
+        "publisher": "Springer International Publishing",
+        "abstract": "To develop and validate a non-invasive method to estimate pancreatic duct pressure (PDP) by integrating magnetic resonance cholangiopancreatography (MRCP)-derived anatomy with computational flow modeling and to assess its clinical relevance for identifying pancreatic ductal hypertension (PDH) in chronic pancreatitis.Three-dimensional pancreatic duct geometries were reconstructed from MRCP and used for computational fluid dynamics (CFD) simulations with physiologic wall-secretion boundary conditions. A quasi-one-dimensional analytical model was also derived to enable rapid PDP prediction from ductal geometry and flow. Prospective cases with endoscopic retrograde cholangiopancreatography (ERCP) manometry were used for validation, and a retrospective chronic pancreatitis (CP) cohort with documented pain-relief outcomes after decompression evaluated clinical utility …"
+      },
+      "filled": true,
+      "author_pub_id": "Itqka-wAAAAJ:u-x6o8ySG0sC",
+      "num_citations": 1,
+      "citedby_url": "/scholar?hl=en&cites=12141444085294015812",
+      "cites_id": [
+        "12141444085294015812"
+      ],
+      "pub_url": "https://link.springer.com/article/10.1007/s10439-026-04018-8",
+      "url_related_articles": "/scholar?oi=bibs&hl=en&q=related:RKU3RBETf6gJ:scholar.google.com/",
+      "cites_per_year": {
+        "2026": 1
+      }
+    },
+    {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Computational Modeling of Pancreatic Duct Flows for a Novel Non-invasive Diagnosis of Chronic Pancreatitis",
+        "pub_year": 2024,
+        "citation": "APS Division of Fluid Dynamics Meeting Abstracts, ZC16. 010, 2024",
+        "author": "Haobo Zhao and Jung-Hee Seo and Venkata Akshintala and Ibadat Boparai and Rajat Mittal",
+        "journal": "APS Division of Fluid Dynamics Meeting Abstracts",
+        "pages": "ZC16. 010",
+        "abstract": "Chronic pancreatitis with debilitating abdominal pain can be caused by pancreatic ductal hypertension. The origin and biomechanical mechanism of the pancreatic ductal hypertension, however, have not been well understood, and this limits the success rate of endotherapy and surgery to relieve hypertension. In order to investigate the correlation between pancreatic ductal pressure and abdominal pain, we performed patient-specific image-based computational fluid dynamic analysis of pancreatic duct flows. A 3D model of the pancreatic duct is reconstructed from a magnetic resonance cholangiopancreatography (MRCP) imaging data, and the computational fluid dynamics simulation is performed to determine the flow pattern and measure the pressure drop across the duct. The simulation results are compared with the in-vivo measurements done in endoscopic retrograde cholangiopancreatography (ERCP), and …"
+      },
+      "filled": true,
+      "author_pub_id": "Itqka-wAAAAJ:u5HHmVD_uO8C",
+      "num_citations": 0,
+      "pub_url": "https://ui.adsabs.harvard.edu/abs/2024APS..DFDZ16010Z/abstract",
+      "url_related_articles": "/scholar?oi=bibs&hl=en&q=related:4cfXVOEq3MAJ:scholar.google.com/",
+      "cites_per_year": {}
+    }
+  ],
+  "citedby5y": 1,
+  "hindex": 1,
+  "hindex5y": 1,
+  "i10index": 0,
+  "i10index5y": 0,
+  "cites_per_year": {}
+}
