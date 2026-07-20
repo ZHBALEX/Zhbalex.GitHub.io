@@ -18,7 +18,7 @@
   ],
   "email_domain": "@virginia.edu",
   "homepage": "https://zhbalex.github.io/",
-  "citedby": 1,
+  "citedby": 2,
   "publications": [
     {
       "container_type": "Publication",
@@ -26,16 +26,18 @@
       "bib": {
         "title": "Non-invasive Assessment of Pancreatic Duct Hypertension Using Computational Flow Modeling: H. Zhao et al.",
         "pub_year": 2026,
-        "citation": "Annals of biomedical engineering, 1-15, 2026",
+        "citation": "Annals of biomedical engineering 54 (7), 2051-2065, 2026",
         "author": "Haobo Zhao and Jung-Hee Seo and Venkata Akshintala and Surya Evani and Rajat Mittal",
         "journal": "Annals of biomedical engineering",
-        "pages": "1-15",
+        "volume": "54",
+        "number": "7",
+        "pages": "2051-2065",
         "publisher": "Springer International Publishing",
         "abstract": "To develop and validate a non-invasive method to estimate pancreatic duct pressure (PDP) by integrating magnetic resonance cholangiopancreatography (MRCP)-derived anatomy with computational flow modeling and to assess its clinical relevance for identifying pancreatic ductal hypertension (PDH) in chronic pancreatitis.Three-dimensional pancreatic duct geometries were reconstructed from MRCP and used for computational fluid dynamics (CFD) simulations with physiologic wall-secretion boundary conditions. A quasi-one-dimensional analytical model was also derived to enable rapid PDP prediction from ductal geometry and flow. Prospective cases with endoscopic retrograde cholangiopancreatography (ERCP) manometry were used for validation, and a retrospective chronic pancreatitis (CP) cohort with documented pain-relief outcomes after decompression evaluated clinical utility …"
       },
       "filled": true,
       "author_pub_id": "Itqka-wAAAAJ:u-x6o8ySG0sC",
-      "num_citations": 1,
+      "num_citations": 2,
       "citedby_url": "/scholar?hl=en&cites=12141444085294015812",
       "cites_id": [
         "12141444085294015812"
@@ -43,7 +45,7 @@
       "pub_url": "https://link.springer.com/article/10.1007/s10439-026-04018-8",
       "url_related_articles": "/scholar?oi=bibs&hl=en&q=related:RKU3RBETf6gJ:scholar.google.com/",
       "cites_per_year": {
-        "2026": 1
+        "2026": 2
       }
     },
     {
@@ -66,7 +68,7 @@
       "cites_per_year": {}
     }
   ],
-  "citedby5y": 1,
+  "citedby5y": 2,
   "hindex": 1,
   "hindex5y": 1,
   "i10index": 0,
